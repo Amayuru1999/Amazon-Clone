@@ -1,5 +1,10 @@
 import Image from 'next/image';
 import React from 'react';
+import {
+    MenuIcon,
+    SearchIcon,
+    ShoppingCartIcon,
+}from "@heroicons/react/outline"
 
 const Header = () => {
     return (
@@ -18,6 +23,7 @@ const Header = () => {
                 {/* Search bar */}
                 <div>
                     <input type='text' />
+                    <SearchIcon />
                 </div>
             </div>
             {/* Bottom nav */}
