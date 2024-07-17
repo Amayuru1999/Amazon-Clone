@@ -7,7 +7,11 @@ const Header = () => {
             {/* Top nav */}
             <div>
                 <div>
-                    <Image/>
+                    <Image
+                        src="https://links.papareact.com/f90"
+                        width={150}
+                        height={40}
+                    />
                 </div>
             </div>
             {/* Bottom nav */}
