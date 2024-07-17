@@ -15,6 +15,10 @@ const Header = () => {
                         className='cursor-pointer'
                     />
                 </div>
+                {/* Search bar */}
+                <div>
+                    <input type='text' />
+                </div>
             </div>
             {/* Bottom nav */}
             <div>
