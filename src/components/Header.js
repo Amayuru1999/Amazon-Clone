@@ -21,9 +21,9 @@ const Header = () => {
                     />
                 </div>
                 {/* Search bar */}
-                <div>
+                <div className='hidden sm:flex bg-yellow-400 hover:bg-yellow-500'>
                     <input type='text' />
-                    <SearchIcon />
+                    <SearchIcon className='h-12 p-4' />
                 </div>
             </div>
             {/* Bottom nav */}
