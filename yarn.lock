@@ -441,10 +441,10 @@
     protobufjs "^7.2.5"
     yargs "^17.7.2"
 
-"@heroicons/react@^2.1.5":
-  version "2.1.5"
-  resolved "https://registry.npmjs.org/@heroicons/react/-/react-2.1.5.tgz"
-  integrity sha512-FuzFN+BsHa+7OxbvAERtgBTNeZpUjgM/MIizfVkSCL2/edriN0Hx/DWRCR//aPYwO5QX/YlgLGXk+E3PcfZwjA==
+"@heroicons/react@^1.0.6":
+  version "1.0.6"
+  resolved "https://registry.npmjs.org/@heroicons/react/-/react-1.0.6.tgz"
+  integrity sha512-JJCXydOFWMDpCP4q13iEplA503MQO3xLoZiKum+955ZCtHINWnx26CUxVxxFQu/uLb4LW3ge15ZpzIkXKkJ8oQ==
 
 "@js-sdsl/ordered-map@^4.4.2":
   version "4.4.2"
