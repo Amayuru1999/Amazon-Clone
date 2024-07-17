@@ -3,7 +3,14 @@ import React from 'react';
 const Header = () => {
     return (
         <header>
-            This is the header
+            {/* Top nav */}
+            <div>
+
+            </div>
+            {/* Bottom nav */}
+            <div>
+                
+            </div>
         </header>
     );
 };
