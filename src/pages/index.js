@@ -7,7 +7,7 @@ export default function Home() {
         <title>Amazon 2.0</title>
       </Head>
 
-      
+      <h1>Hello Amazon</h1>
     </div>
   );
 }
