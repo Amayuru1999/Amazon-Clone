@@ -28,6 +28,21 @@ const Header = () => {
           />
           <SearchIcon className="h-12 p-4" />
         </div>
+        {/* Right */}
+        <div className="text-white">
+          <div>
+            <p>Hello, Sign In</p>
+            <p>Account & Lists</p>
+          </div>
+          <div>
+            <p>Returns</p>
+            <p>& Orders</p>
+          </div>
+          <div>
+            <ShoppingCartIcon className="h-10" />
+            <p>Basket</p>
+          </div>
+        </div>
       </div>
       {/* Bottom nav */}
       <div></div>
