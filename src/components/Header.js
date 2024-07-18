@@ -47,7 +47,7 @@ const Header = () => {
       </div>
       {/* Bottom nav */}
       <div className="flex items-center bg-amazon_blue-light text-white text-small">
-        <p>
+        <p className="link flex items-center">
             <MenuIcon className="h-6 mr-1" />
             All
         </p>
