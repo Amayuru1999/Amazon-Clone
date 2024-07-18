@@ -46,11 +46,15 @@ const Header = () => {
         </div>
       </div>
       {/* Bottom nav */}
-      <div className="flex items-center bg-amazon_blue-light text-white text-small">
+      <div className="flex items-center bg-amazon_blue-light text-white text-small space-x-3 p-2 pl-6">
         <p className="link flex items-center">
             <MenuIcon className="h-6 mr-1" />
             All
         </p>
+        <p className="link">Prime Video</p>
+        <p className="link">Amazon Business</p>
+        <p className="link">Today's Deals</p>
+        <p className="link hidden lg:inline-flex">Electronics</p>
       </div>
     </header>
   );
