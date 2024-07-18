@@ -30,15 +30,15 @@ const Header = () => {
         </div>
         {/* Right */}
         <div className="text-white flex items-center text-xs space-x-6 mx-6 whitespace-nowrap">
-          <div className="cursor-pointer">
+          <div className="link">
             <p>Hello, Sign In</p>
             <p>Account & Lists</p>
           </div>
-          <div className="cursor-pointer">
+          <div className="link">
             <p>Returns</p>
             <p>& Orders</p>
           </div>
-          <div className="cursor-pointer">
+          <div className="link">
             <ShoppingCartIcon className="h-10" />
             <p>Basket</p>
           </div>
