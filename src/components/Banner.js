@@ -7,6 +7,10 @@ const Banner = () => {
         <Carousel
             autoPlay
             infiniteLoop
+            showStatus={false}
+            showIndicators={false}
+            showThumbs={false}
+            interval={5000}
         >
 
         </Carousel>
