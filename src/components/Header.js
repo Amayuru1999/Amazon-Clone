@@ -29,16 +29,16 @@ const Header = () => {
           <SearchIcon className="h-12 p-4" />
         </div>
         {/* Right */}
-        <div className="text-white flex items-center text-xs space-x-6 mx-6">
-          <div>
+        <div className="text-white flex items-center text-xs space-x-6 mx-6 whitespace-nowrap">
+          <div className="cursor-pointer">
             <p>Hello, Sign In</p>
             <p>Account & Lists</p>
           </div>
-          <div>
+          <div className="cursor-pointer">
             <p>Returns</p>
             <p>& Orders</p>
           </div>
-          <div>
+          <div className="cursor-pointer">
             <ShoppingCartIcon className="h-10" />
             <p>Basket</p>
           </div>
