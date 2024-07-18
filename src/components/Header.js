@@ -29,7 +29,7 @@ const Header = () => {
           <SearchIcon className="h-12 p-4" />
         </div>
         {/* Right */}
-        <div className="text-white">
+        <div className="text-white flex items-center text-xs space-x-6 mx-6">
           <div>
             <p>Hello, Sign In</p>
             <p>Account & Lists</p>
