@@ -1,8 +1,9 @@
 import React from 'react'
+import { Carousel } from 'react-responsive-carousel'
 
 const Banner = () => {
   return (
-    <div>
+    <div className='relative'>
       
     </div>
   )
