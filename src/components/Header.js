@@ -46,7 +46,12 @@ const Header = () => {
         </div>
       </div>
       {/* Bottom nav */}
-      <div></div>
+      <div>
+        <p>
+            <MenuIcon className="h-6 mr-1" />
+            All
+        </p>
+      </div>
     </header>
   );
 };
