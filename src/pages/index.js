@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Header from "../components/Header";
 import Banner from "../components/Banner";
+import ProductFeed from "../components/ProductFeed";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <Banner/>
 
         {/* ProductFeed */}
+        <ProductFeed/>
       </main>
     </div>
   );
