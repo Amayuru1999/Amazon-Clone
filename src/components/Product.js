@@ -8,6 +8,8 @@ const MIN_RATING = 1
 const Product = ({id,title,price,description,category,image}) => {
   const [rating]=useState(
     Math.floor(Math.random()*(MAX_RATING-MIN_RATING+1))+MIN_RATING);
+
+    const [hasPrime]=useState(Math.random()<0.5);
   return (
     <div>
       <p>{category}</p>
@@ -18,6 +20,7 @@ const Product = ({id,title,price,description,category,image}) => {
           <StarIcon key={i} className='h-5 text-yellow-500' />
         ))}
         </div>
+        <p>{description}</p>
     </div>
   )
 }
