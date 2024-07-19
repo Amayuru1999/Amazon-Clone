@@ -33,8 +33,11 @@ const Product = ({ id, title, price, description, category, image }) => {
       {hasPrime && (
         <div>
           <Image src={Prime} alt='prime' className='w-12' />
+          <p>FREE Next-day Delivery</p>
         </div>
       )}
+
+      <button>Add to Basket</button>
     </div>
   )
 }
