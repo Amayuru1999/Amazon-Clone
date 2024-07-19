@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 import { StarIcon } from '@heroicons/react/solid'
+import Currency from 'react-currency-formatter'
 
 const MAX_RATING = 5
 const MIN_RATING = 1
@@ -21,6 +22,16 @@ const Product = ({id,title,price,description,category,image}) => {
         ))}
         </div>
         <p>{description}</p>
+        <div>
+          <Currency quantity={price} currency='LKR' />
+        </div>
+        {hasPrime && (
+          <div>
+            <img src='https://links.papareact.com/fdw' alt='' className='w-12' />
+          </div>
+        )
+
+        }
     </div>
   )
 }
