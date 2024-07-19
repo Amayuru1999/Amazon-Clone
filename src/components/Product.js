@@ -32,7 +32,7 @@ const Product = ({ id, title, price, description, category, image }) => {
       </div>
       {hasPrime && (
         <div>
-          <img src={Prime} alt='' className='w-12' />
+          <Image src={Prime} alt='prime' className='w-12' />
         </div>
       )}
     </div>
