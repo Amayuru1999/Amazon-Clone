@@ -30,7 +30,7 @@ const Product = ({ id, title, price, description, category, image }) => {
             <StarIcon key={i} className="h-5 text-yellow-500" />
           ))}
       </div>
-      <p>{description}</p>
+      <p className="text-xs my-2">{description}</p>
       <div>
         <Currency quantity={price} currency="LKR" />
       </div>
