@@ -10,6 +10,9 @@ function Checkout() {
         {/* Left */}
         <div>
             <Image src="https://links.papareact.com/ikj" width={1020} height={250} objectFit="contain" />
+            <div>
+                <h1>Your Shopping Basket</h1>
+            </div>
         </div>
         {/* Right */}
         <div></div>
