@@ -7,7 +7,7 @@ import Prime from "./../assets/prime.png";
 const MAX_RATING = 5;
 const MIN_RATING = 1;
 
-const Product = ({ id, title, price, description, category, image }) => {
+export default function Product  ({ id, title, price, description, category, image }) {
   const [rating, setRating] = useState(0);
   const [hasPrime, setHasPrime] = useState(false);
 
@@ -48,4 +48,4 @@ const Product = ({ id, title, price, description, category, image }) => {
   );
 };
 
-export default Product;
+

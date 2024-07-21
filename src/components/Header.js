@@ -7,7 +7,7 @@ import {
 } from "@heroicons/react/outline";
 import { signIn, signOut, useSession } from "next-auth/react";
 
-const Header = () => {
+export default function Header() {
 
   const [session] = useSession();
 
@@ -69,4 +69,3 @@ const Header = () => {
   );
 };
 
-export default Header;
