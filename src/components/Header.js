@@ -8,6 +8,9 @@ import {
 import { signIn, signOut, useSession } from "next-auth/react";
 
 const Header = () => {
+
+  const [session] = useSession();
+  
   return (
     <header>
       {/* Top nav */}
