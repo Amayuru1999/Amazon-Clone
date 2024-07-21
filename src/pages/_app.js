@@ -1,16 +1,15 @@
 import { Provider as ReduxProvider } from 'react-redux';
-import { Provider as AuthProvider } from 'next-auth/react';
+import { SessionProvider } from 'next-auth/react'; // Ensure this is the correct import
 import { store } from '../app/store';
 import '../styles/globals.css';
 
-
 const MyApp = ({ Component, pageProps }) => {
   return (
-    <AuthProvider session={pageProps.session}>
+    <SessionProvider session={pageProps.session}>
       <ReduxProvider store={store}>
         <Component {...pageProps} />
       </ReduxProvider>
-    </AuthProvider>
+    </SessionProvider>
   );
 };
 
