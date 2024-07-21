@@ -14,3 +14,4 @@ const MyApp = ({ Component, pageProps }) => {
 };
 
 export default MyApp;
+//Merge the two snippets together to create the following code:
