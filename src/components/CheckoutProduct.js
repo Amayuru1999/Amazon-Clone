@@ -3,6 +3,7 @@ import Image from 'next/image'
 import React from 'react'
 import Currency from 'react-currency-formatter'
 import Prime from "./../assets/prime.png";
+import { useDispatch } from 'react-redux';
 
 function CheckoutProduct({
     id,
@@ -14,6 +15,10 @@ function CheckoutProduct({
     image,
     hasPrime,
 }) {
+    const dispatch = useDispatchspatch();
+    const addItemToBasket = () => {
+
+    }
   return (
     <div className='grid grid-cols-5'>
       <Image src={image} height={200} width={200} objectFit='contain' />
@@ -37,6 +42,12 @@ function CheckoutProduct({
             </div>
         )}
       </div>
+      {/* Right add/remove buttons */}
+      <div className='flex flex-col space-y-2 my-auto justify-self-end'>
+      <button className='button mt-auto'>Add to Basket</button>
+      <button className='button mt-auto'>Remove from Basket</button>
+      </div>
+      
     </div>
   )
 }
