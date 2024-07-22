@@ -4,6 +4,7 @@ import React from 'react'
 import Currency from 'react-currency-formatter'
 import Prime from "./../assets/prime.png";
 import { useDispatch } from 'react-redux';
+import { addToBasket ,removeFromBasket} from '../slices/basketSlice';
 
 function CheckoutProduct({
     id,
