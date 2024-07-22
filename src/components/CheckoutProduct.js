@@ -2,6 +2,7 @@ import { StarIcon } from '@heroicons/react/outline'
 import Image from 'next/image'
 import React from 'react'
 import Currency from 'react-currency-formatter'
+import Prime from "./../assets/prime.png";
 
 function CheckoutProduct({
     id,
@@ -29,6 +30,12 @@ function CheckoutProduct({
         </div>
         <p className='text-xs my-2 line-clamp-3'>{description}</p>
         <Currency quantity={price} currency='LKR' />
+        {hasPrime && (
+            <div className='flex items-center space-x-2'>
+                <Image src={Prime} alt="prime-del" className="w-12" />
+                <p className='text-xs text-gray-500'>FREE Next-day Delivery</p>
+            </div>
+        )}
       </div>
     </div>
   )
