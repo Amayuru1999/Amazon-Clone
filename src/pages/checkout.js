@@ -3,6 +3,7 @@ import Header from '../components/Header'
 import Image from 'next/image'
 import { useSelector } from 'react-redux'
 import { selectItems } from '../slices/basketSlice'
+import CheckoutProduct from '../components/CheckoutProduct'
 
 function Checkout() {
   const items=useSelector(selectItems)
@@ -21,6 +22,10 @@ function Checkout() {
 
                   }
                 </h1>
+                  {items.map((item,i) => (
+                    <CheckoutProduct/>
+                  ))}
+
             </div>
 
         </div>
