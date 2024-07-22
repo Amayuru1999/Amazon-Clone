@@ -4,6 +4,7 @@ import { StarIcon } from "@heroicons/react/solid";
 import Currency from "react-currency-formatter";
 import Prime from "./../assets/prime.png";
 import { useDispatch } from "react-redux";
+import { addToBasket } from "./../slices/basketSlice";
 
 const MAX_RATING = 5;
 const MIN_RATING = 1;
@@ -15,8 +16,16 @@ function Product  ({ id, title, price, description, category, image }) {
   const [hasPrime, setHasPrime] = useState(false);
 
   const addItemToBasket = () => {
+    const product = {
+      id,
+      title,
+      price,
+      description,
+      category,
+      image,
+    };
 
-  }
+  };
 
   useEffect(() => {
     setRating(
