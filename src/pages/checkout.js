@@ -50,7 +50,7 @@ function Checkout() {
                         {items.reduce((total,item) => total + item.price,0)}
                       </span>
                     </h2>
-                    <button className={`button mt-2 ${!session && 'from-gray-300 to-gray-500 border-gray-200 text-gray-300'}`}>
+                    <button className={`button mt-2 ${!session && 'from-gray-300 to-gray-500 border-gray-200 text-gray-300 cursor-not-allowed'}`}>
                         {!session ? 'Sign in to checkout' : 'Proceed to checkout'}
                     </button>
                 </>
