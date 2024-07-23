@@ -40,7 +40,18 @@ function Checkout() {
 
         </div>
         {/* Right */}
-        <div></div>
+        <div>
+            {items.length > 0 && (
+                <>
+                    <h2 className='whitespace-nowrap'>Subtotal ({items.length} items):
+                      <span className='font-bold'>
+                        {items.reduce((total,item) => total + item.price,0)}
+                      </span>
+                    </h2>
+                    <button className='button mt-2'>Proceed to Checkout</button>
+                </>
+            )}
+        </div>
       </main>
     </div>
   )
