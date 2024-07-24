@@ -31,7 +31,7 @@ Utilisation de Next.js, un framework React, pour le développement de l'applicat
 Mise en œuvre de techniques de chargement paresseux (lazy loading) pour les images afin d'améliorer les performances.
 Gestion des dépendances et des configurations à l'aide d'outils tels que npm et yarn.
 Technology Stack
-Next.js
-React
-JavaScript
-CSS
+## Next.js
+## React
+## JavaScript
+## CSS
