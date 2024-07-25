@@ -6,6 +6,8 @@ import {selectItems, selectTotal} from '../slices/basketSlice'
 import CheckoutProduct from '../components/CheckoutProduct'
 import {useSession} from "next-auth/react";
 import Currency from "react-currency-formatter";
+import { loadStripe } from "@stripe/stripe-js";
+const stripePromise = loadStripe(process.env.stripe_public_key);
 
 function Checkout() {
   const items=useSelector(selectItems);
@@ -13,7 +15,7 @@ function Checkout() {
   const { data: session, status } = useSession();
 
   const createCheckoutSession = () => {
-    
+
   }
 
 
