@@ -26,6 +26,7 @@ Run commands
 This is a GitHub repository for an Amazon clone project built using Next.js, a popular React framework. The project aims to create a functional e-commerce website similar to Amazon, with features such as product listings, shopping cart, and checkout process.
 
 Main Function Points
+
 Création d'une interface utilisateur similaire à Amazon avec des fonctionnalités telles que la liste des produits, le panier d'achat et le processus de paiement.
 Utilisation de Next.js, un framework React, pour le développement de l'application.
 Mise en œuvre de techniques de chargement paresseux (lazy loading) pour les images afin d'améliorer les performances.
