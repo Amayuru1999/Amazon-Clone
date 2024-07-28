@@ -15,5 +15,15 @@ const endpointSecret = process.env.STRIPE_SIGNING_SECRET;
 export default async (req, res) => {
     if(req.method === 'POST'){
         const  requestBuffer = await buffer(req);
+        const payload = requestBuffer.toString();
+        const sig = req.headers['stripe-signature'];
+        let event;
+        //Verify that the EVENT posted came from STRIPE
+        try{
+            event = stripe.webhooks.constructEvent(payload,sig,endpointSecret);
+        } catch (err){
+            console.log('ERROR',err.message);
+            return res.status(400).send(`Webhook error: ${err.message}`);
+
     }
-}
+}};
