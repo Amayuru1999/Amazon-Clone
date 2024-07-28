@@ -55,3 +55,9 @@ export default async (req, res) => {
             return fulfillOrder(session).then(() => res.status(200)).catch((err) => res.status(400).send(`Webhook Error: ${err.message}`));
         }
 }};
+export const config={
+    api:{
+        bodyParser:false,
+        externalResolver:true,
+    }
+}
