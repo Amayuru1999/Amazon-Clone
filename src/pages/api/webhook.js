@@ -27,4 +27,10 @@ export default async (req, res) => {
 
     }
     //Handle the checkout.session.completed event
+        if(event.type === 'checkout.session.completed'){
+            const session = event.data.object;
+
+            //Fulfill the purchase
+            return fulfillOrder(session).then(() => res.status(200)).catch((err) => res.status(400).send(`Webhook Error: ${err.message}`));
+        }
 }};
