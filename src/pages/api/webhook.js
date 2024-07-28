@@ -26,4 +26,5 @@ export default async (req, res) => {
             return res.status(400).send(`Webhook error: ${err.message}`);
 
     }
+    //Handle the checkout.session.completed event
 }};
