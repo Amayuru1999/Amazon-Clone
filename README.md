@@ -23,7 +23,8 @@ Run commands
 3) ```yarn run dev```
 
 
-This is a GitHub repository for an Amazon clone project built using Next.js, a popular React framework. The project aims to create a functional e-commerce website similar to Amazon, with features such as product listings, shopping cart, and checkout process.
+This is a GitHub repository for an Amazon clone project built using Next.js, a popular React framework.
+The project aims to create a functional e-commerce website similar to Amazon, with features such as product listings, shopping cart, and checkout process.
 
 Main Function Points
 
